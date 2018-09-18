@@ -1,0 +1,18 @@
+$cyan: #66CCCC;
+@import 'navbar';
+@import 'home';
+// @import '';
+
+#about-me {
+    min-height: 100vh;
+    background: url("../images/landing-page.jpg") no-repeat center center fixed;
+}
+
+.navbar-relative {
+    position: fixed;
+}
+
+
+
+
+// background: url("../images/landing-page.jpg") no-repeat center center fixed;
