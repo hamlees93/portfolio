@@ -1,3 +1,6 @@
+.navbar-relative {
+  position: fixed; }
+
 #home {
   background: #66CCCC;
   min-height: 100vh;
@@ -6,9 +9,7 @@
 
 #about-me {
   min-height: 100vh;
-  background: url("../images/landing-page.jpg") no-repeat center center fixed; }
-
-.navbar-relative {
-  position: fixed; }
+  background: url("../images/landing-page.jpg") no-repeat center center fixed;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
