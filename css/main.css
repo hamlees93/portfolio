@@ -7,11 +7,6 @@
   width: 100%;
   background-size: cover; }
 
-#about-me {
-  min-height: 100vh;
-  background: url("../images/landing-page.jpg") no-repeat center center fixed;
-  background-size: cover; }
-
 .carousel {
   background: #EEE; }
 
@@ -141,5 +136,39 @@
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1; }
+
+#about-me {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: repeat(3, auto);
+  min-height: 100vh; }
+  #about-me .side {
+    grid-column: 1/span 1;
+    grid-row: 1 / 4;
+    background: greenyellow; }
+  #about-me .vertical-text {
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); }
+  #about-me .item {
+    grid-column: 2/span 1;
+    background: pink; }
+
+#interests {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  min-height: 100vh; }
+  #interests .side {
+    grid-column: 2/span 1;
+    grid-row: 1 / 4;
+    background: greenyellow; }
+  #interests .vertical-text {
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); }
+  #interests .item {
+    grid-column: 1/span 1;
+    background: pink; }
 
 /*# sourceMappingURL=main.css.map */

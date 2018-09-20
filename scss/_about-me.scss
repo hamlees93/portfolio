@@ -1,11 +1,38 @@
-#about-me {
+// Varibales for the 2 sections
+$about-me-variables: 1fr 9fr (1 / span 1) (2 / span 1);
+$interests-variables: 9fr 1fr (2 / span 1) (1 / span 1);
+
+@mixin about-me-list($col1, $col2, $side-col, $item-col) {
+    display: grid;
+    grid-template-columns: $col1 $col2;
+    grid-template-rows: repeat(3, auto);
+
+    // PURELY DEMO PURPOSES
     min-height: 100vh;
-    background: url("../images/landing-page.jpg") no-repeat center center fixed;
-    background-size: cover;
+
+    .side {
+        grid-column: $side-col;
+        grid-row: 1 / 4;
+        background: greenyellow;
+    }
+
+    .vertical-text {
+        text-align: center;
+        writing-mode: vertical-rl;
+        transform:rotate(180deg);
+    }
+
+    .item {
+        grid-column: $item-col;
+        background: pink;
+    }
+}
+
+#about-me {
+    @include about-me-list($about-me-variables...);
 }
 
 
-
-
-
-
+#interests {
+    @include about-me-list($interests-variables...);
+}
