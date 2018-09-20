@@ -1,11 +1,11 @@
 @mixin about-me-side ($side-column, $side-row) {
     grid-column: $side-column;
     grid-row: $side-row;
-    background: #F6E8EA;
+    background: #FE4A49;
 }
 
 #about-me {
-    background: url('../images/about-me-background.jpg');
+    background: #F0D756;
     background-size: cover;
     min-height: 100vh;
     display: grid;
