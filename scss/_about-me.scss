@@ -1,3 +1,7 @@
+#fake-container {
+    z-index: -10;
+    position: absolute;
+}
 #about-me {
     // background-image: linear-gradient(to right, #8982B1 42%, #b49fda 79%);
     // background: #F0D756;
@@ -10,14 +14,14 @@
     overflow: hidden;
 
     // red 
-    .square {
+    #square {
         width: 200px;
         height: 200px;
         background: #E00321;
     }
 
     // blue 
-    .circle {
+    #circle {
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -25,19 +29,12 @@
     }
 
     // yellow 
-    .triangle {
+    #triangle {
         width: 0;
         height: 0;
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
         border-bottom: 200px solid #FFFF00;
-    }
-
-    svg {
-        width: 400px;
-        height: 400px;
-        position: absolute;
-        z-index: -1;
     }
 
     .about-me-header {
@@ -56,40 +53,46 @@
     }
 
     .skills {
-        // FOR LARGER SCREEN
-        // display: grid;
-        // grid-template-columns: repeat(3, auto);
-        // grid-template-rows: repeat(3, auto);
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        align-items: center;
+        justify-items: center;
 
-        // @mixin about-me-icons($col, $row) {
-        //     grid-column: $col;
-        //     grid-row: $row;
-        // }
+        @mixin about-me-icons($col, $row) {
+            grid-column: $col;
+            grid-row: $row;
+        }
 
-        // #ruby {
-        //     @include about-me-icons((1 / span 1), (1 / span 1))
-        // }
+        #ruby {
+            @include about-me-icons((1 / span 1), (1 / span 1));
+        }
 
-        // #rails {
-        //     @include about-me-icons((3 / span 1), (1 / span 1))
-        // }
+        #rails {
+            @include about-me-icons((3 / span 1), (1 / span 1));
+        }
 
-        // #html {
-        //     @include about-me-icons((1 / span 1), (3 / span 1))
-        // }
+        .skills-header {
+            @include about-me-icons((2 / span 1), (2 / span 1));
+            background: #4D6CFA;
+            border-radius: 40px;
+        }
 
-        // #bootstrap {
-        //     @include about-me-icons((3 / span 1), (3 / span 1))
-        // }
+        #html {
+            @include about-me-icons((1 / span 1), (3 / span 1));
+        }
+
+        #bootstrap {
+            @include about-me-icons((3 / span 1), (3 / span 1));
+        }
 
         .skills-item {
-            padding-top: 50px;
+            // padding-top: 50px;
 
             img {
-                max-width: 150px;
-                max-height: 150px;
+                max-width: 120px;
+                max-height: 120px;
             }
         }
     }
 }
-
