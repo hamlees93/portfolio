@@ -1,39 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Yellowtail");
 .navbar-relative {
   position: fixed; }
 
 #home {
-  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
-  min-height: 100vh;
+  background: linear-gradient(to bottom right, #2E323A 41.8%, #fff 43%);
+  min-height: 90vh;
   width: 100%;
   background-size: cover; }
+  #home img {
+    width: 60vh;
+    margin: auto; }
+  #home .tagline {
+    text-align: center;
+    position: absolute;
+    bottom: 15%; }
+    #home .tagline .name-title {
+      font-family: 'yellowtail';
+      font-size: 4em; }
+    #home .tagline .job-title {
+      font-family: "montserrsat"; }
 
 #about-me {
-  background: #F0D756;
   background-size: cover;
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: repeat(7, auto); }
-  #about-me .vertical-text {
-    text-align: center;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    border-radius: 120px; }
-  #about-me .hamish-side {
-    grid-column: 1/span 1;
-    grid-row: 1/span 4;
-    background: #FE4A49; }
-  #about-me .skills-side {
-    grid-column: 3/span 1;
-    grid-row: 4/span 5;
-    background: #FE4A49; }
-  #about-me .item {
-    grid-column: 2 / span 1;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  overflow: hidden; }
+  #about-me .square {
+    width: 200px;
+    height: 200px;
+    background: #E00321; }
+  #about-me .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #00ADFF; }
+  #about-me .triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #FFFF00; }
+  #about-me svg {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: -1; }
+  #about-me .about-me-header {
     background: #4D6CFA;
-    border-radius: 40px;
-    text-align: center; }
+    border-radius: 40px; }
+  #about-me .item {
+    width: 300px;
+    padding-top: 50px; }
   #about-me #blank {
     background: none; }
+  #about-me .skills .skills-item {
+    padding-top: 50px; }
+    #about-me .skills .skills-item img {
+      max-width: 150px;
+      max-height: 150px; }
 
 #previous-work {
   min-height: 75vh;

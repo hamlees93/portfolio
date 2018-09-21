@@ -1,9 +1,30 @@
 #home {
-    // background: url('../images/landing-page-background.png');
-    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
-    min-height: 100vh;
+    background: linear-gradient(to bottom right, #2E323A 41.8%, #fff 43%);
+    min-height: 90vh;
     width: 100%;
     background-size: cover;
+
+    img {
+        width: 60vh;
+        margin: auto;
+    }
+
+    .tagline {
+        text-align: center;
+        position: absolute;
+        bottom: 15%;
+
+        .name-title {
+            font-family: 'yellowtail';
+            font-size: 4em;
+        }
+
+        .job-title {
+            font-family: 'montserrsat'
+        }
+    }
+
+    
 
     // img {
     //     -webkit-transform: rotate(45deg);
