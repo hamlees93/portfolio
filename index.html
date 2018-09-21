@@ -18,6 +18,8 @@
         ScrollReveal({ reset: true });
 		</script> -->
 		<!-- End script -->
+
+		
 		
     <title>Hamish Lees</title>
   </head>
@@ -64,48 +66,62 @@
 	 
 
 		<!-- Landing page -->
-		<section class="container-fluid d-flex align-items-center" id="home">
+		<section id="home" class="container-fluid d-flex align-items-center">
 			<section class="row justify-content-center">
-				<section class="container">
+				<section class="container mx-4">
 					<img class="turtle-neck img-fluid rounded mx-auto" src="images/turtle-neck.jpg" alt="Picture of aspiring-developer, Hamish Lees, in a turtle neck">
 				</section>
-				<h1 class="name-title">Hamish Lees</h1>
-				<h2 class="job-title">Aspiring Developer</h2>
+				<section class="container tagline justify-content-center">
+					<h1 class="name-title">Hamish Lees</h1>
+					<h2 class="job-title">Aspiring Developer</h2>
+				</section>
 			</section>
 		</section>
 		<!-- End Landing Page -->
 
 
 		<!--  About me -->
-		<!-- TO POP UP AS YOU SCROLL DOWN or SNAP DOWN TO IT-->
+		<!-- Good till 600px -->
+		<!-- SVGs are conecting, not neccesarrily to the middle -->
 		<section id="about-me" class="container-fluid py-4">	
-			<section class="hamish-side vertical-text">
+			<section class="about-me-header item">
 				<h4>ABOUT ME</h4>
+				<svg><line x1="0" y1 ="0" x2="100" y2="100" stroke="black"/></svg>
 			</section>
-			<section class="item">
-				<p>Hi there. Thanks for visiting my website. My name is Hamish, and I'm an aspiring web developer from Sydney.</p> 
+			<section class="item d-flex justify-content-end">
+				<section class="square">
+					<p>Hi there. Thanks for visiting my website. My name is Hamish, and I'm an aspiring web developer from Sydney.</p> 
+				</section>
+				<svg><line x1="300" y1 ="200" x2="150" y2="300" stroke="black"/></svg>
 			</section>
-			<section class="item">
-				<p>A bit of my past....</p>
+			<section class="item d-flex justify-content-start">
+				<section class="circle">
+					<p>A bit of my past....</p>
+				</section>
+				<svg><line x1="25%" y1 ="150" x2="220" y2="300" stroke="black"/></svg>
 			</section>
-			<section class="item">
-				<p>My interests are....</p>
+			<section class="item d-flex justify-content-end">
+				<section class="triangle">
+					<p>My interests are....</p>
+				</section>
 			</section>
 			<section class="item" id="blank"></section>
-			<section class="skills-side vertical-text">
-				<h4>SKILLS</h4>
-			</section>
-			<section class="item">
-				<img src="" alt="Icon of Ruby">Ruby
-			</section>
-			<section class="item">
-				<img src="" alt="Icon of Rails">Rails
-			</section>
-			<section class="item">
-				<img src="" alt="Icon of HTML">HTML
-			</section>
-			<section class="item">
-				<img src="" alt="Icon of CSS">CSS
+			<section class="skills">
+				<section class="about-me-header item pt-3">
+					<h4>SKILLS</h4>
+				</section>
+				<section id="ruby" class="skills-item">
+					<img src="images/ruby.png" alt="Icon of Ruby">
+				</section>
+				<section id="rails" class="skills-item">
+					<img src="images/rails.png" alt="Icon of Rails">
+				</section>
+				<section id="html" class="skills-item">
+					<img src="images/htmlcss.png" alt="Icon of HTML and CSS">
+				</section>
+				<section id="bootstrap" class="skills-item">
+					<img src="images/bootstrap.png" alt="Icon of Bootstrap">
+				</section>
 			</section>
 		</section>
 			<!-- End Interests -->
@@ -142,15 +158,16 @@
 
 
 		<!-- Contact section -->
-		<section id="contact">
-			<h3>Want to know more?</h3>
-			<h5>E: hamishlees6@gmail.com</h5>
-			<h5>{GIT IMAGE}: www.....</h5>
-			<h5>{LINKEDIN IMAGE}: www......</h5>
-		</section>
-
 		<footer>
-			copyright hamofalltrades
+			<section id="contact">
+				<h3 class="centre-heading">Want to know more?</h3>
+				<h5>E: hamishlees6@gmail.com</h5>
+				<h5>{GIT IMAGE}: www.....</h5>
+				<h5>{LINKEDIN IMAGE}: www......</h5>
+			</section>
+			<section class="copyright centre-heading">
+				copyright hamofalltrades
+			</section>
 		</footer>
 		<!-- End Contact -->
 
