@@ -1,7 +1,19 @@
 footer {
-    background: #664E4C;
+    .centre-heading {
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'yellowtail';
+    }
+
+    img {
+        width: 30%;
+        height: auto;
+    }
+
+    .copyright {
+        font-family: 'montserrsat';
+    }
 }
 
-.centre-heading {
-    text-align: center;
-}

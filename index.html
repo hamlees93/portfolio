@@ -19,6 +19,29 @@
 		</script> -->
 		<!-- End script -->
 
+		<!-- Script for connecitng-arrows -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="jquery.html-svg-connect.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+			  $("#fake-container").HTMLSVGconnect({
+				stroke: "#000",
+				strokeWidth: 8,
+				orientation: "auto",
+				paths: [
+				  { start: ".about-me-header", end: "#square", },
+				  { start: "#square", end: "#circle", },
+				  { start: "#circle", end: "#triangle",  },
+				//   { start: ".skills-header", end: "#ruby",  },
+				//   { start: ".skills-header", end: "#rails",  },
+				//   { start: ".skills-header", end: "#html",  },
+				//   { start: ".skills-header", end: "#bootstrap",  }
+				]
+			  });
+			});
+		  </script>
+		<!-- END connecting-arrows -->
+
 		
 		
     <title>Hamish Lees</title>
@@ -83,43 +106,42 @@
 		<!--  About me -->
 		<!-- Good till 600px -->
 		<!-- SVGs are conecting, not neccesarrily to the middle -->
-		<section id="about-me" class="container-fluid py-4">	
+		<section id="fake-container"></section>
+		<section id="about-me" class="container-fluid py-4">
+				
 			<section class="about-me-header item">
 				<h4>ABOUT ME</h4>
-				<svg><line x1="0" y1 ="0" x2="100" y2="100" stroke="black"/></svg>
 			</section>
 			<section class="item d-flex justify-content-end">
-				<section class="square">
+				<section id="square">
 					<p>Hi there. Thanks for visiting my website. My name is Hamish, and I'm an aspiring web developer from Sydney.</p> 
-				</section>
-				<svg><line x1="300" y1 ="200" x2="150" y2="300" stroke="black"/></svg>
+				</section>		
 			</section>
 			<section class="item d-flex justify-content-start">
-				<section class="circle">
+				<section id="circle">
 					<p>A bit of my past....</p>
 				</section>
-				<svg><line x1="25%" y1 ="150" x2="220" y2="300" stroke="black"/></svg>
 			</section>
 			<section class="item d-flex justify-content-end">
-				<section class="triangle">
+				<section id="triangle">
 					<p>My interests are....</p>
 				</section>
 			</section>
 			<section class="item" id="blank"></section>
 			<section class="skills">
-				<section class="about-me-header item pt-3">
+				<section class="skills-header skills-item p-3">
 					<h4>SKILLS</h4>
 				</section>
-				<section id="ruby" class="skills-item">
+				<section id="ruby" class="skills-item pt-3">
 					<img src="images/ruby.png" alt="Icon of Ruby">
 				</section>
 				<section id="rails" class="skills-item">
 					<img src="images/rails.png" alt="Icon of Rails">
 				</section>
-				<section id="html" class="skills-item">
+				<section id="html" class="skills-item pb-3 mt-5">
 					<img src="images/htmlcss.png" alt="Icon of HTML and CSS">
 				</section>
-				<section id="bootstrap" class="skills-item">
+				<section id="bootstrap" class="skills-item pb-3 mt-5">
 					<img src="images/bootstrap.png" alt="Icon of Bootstrap">
 				</section>
 			</section>
@@ -132,25 +154,26 @@
 		<section class="container-fluid no-gutters px-0" id="previous-work">
 			<section class="carousel"
 			data-flickity='{ "wrapAround": true }'>
-  			<section class="carousel-cell">
-					<img src="http://placekitten.com/300" alt="">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fugit ipsam sint quas omnis nostrum sapiente temporibus nesciunt! Ea cum nam et eius voluptate consectetur veniam similique aspernatur voluptatum assumenda?</p>
+			<section class="carousel-cell">
+					<a href="https://github.com/Ghalip701/Terminal-App" target="_blank"><img src="images/capital-city-quiz.jpg" alt="Screenshot from the app capital city quiz"></a> 
+					<h3>Capital City Quiz</h3>
+					<p>A simple terminal app, written in Ruby, where users can track their high scores, as they attempt to name capital cities</p>
 				</section>
-  			<section class="carousel-cell">
-					<img src="http://placekitten.com/300" alt="">
-					<p>More text</p>
+			<section class="carousel-cell">
+					<a href="https://github.com/hamlees93/take_a_break" target="_blank"><img src="images/break.jpg" alt=""></a>
+					<h5>Take A Break</h5>
+					<p>An app written in Python to remind coders to take a break every 30 minutes</p>
 				</section>
-  			<section class="carousel-cell">
-					<img src="http://placekitten.com/300" alt="">
+			<section class="carousel-cell">
+					<a href="https://github.com/hamlees93/banking_app" target="_blank"><img src="images/banking-app.jpg" alt="Screenshot from banking app"></a> 
+					<h5>Banking App</h5>
+					<p>Written in Ruby, this app allows users to transact with a bank, and save their records</p>
 				</section>
-  			<section class="carousel-cell">
-					<img src="http://placekitten.com/300" alt="">
+			<section class="carousel-cell">
+					<a href="https://github.com/hamlees93/creative_stages" target="_blank"><img src="images/creating-stages.jpg" alt=""></a> 
+					<h5>Creating Stages Website</h5>
+					<p>A website, written in Flask, providing information and contact abilities for users</p>
 				</section>
-  			<section class="carousel-cell">
-					<img src="http://placekitten.com/300" alt="">
-				</section>
-			</section>
-			<section class="carousel-text">
 			</section>
 		</section> 
 		<!-- End Previous Work -->
@@ -160,13 +183,13 @@
 		<!-- Contact section -->
 		<footer>
 			<section id="contact">
-				<h3 class="centre-heading">Want to know more?</h3>
-				<h5>E: hamishlees6@gmail.com</h5>
-				<h5>{GIT IMAGE}: www.....</h5>
-				<h5>{LINKEDIN IMAGE}: www......</h5>
+				<h2 class="centre-heading">Want to know more?</h2>
+				<img src="images/mail.svg" alt="Mail Icon">
+				<img src="images/git.svg" alt="Github Icon">
+				<img src="images/linkedin.svg" alt="LINKEDIN Icon">
 			</section>
 			<section class="copyright centre-heading">
-				copyright hamofalltrades
+				<p>&copy; hamofalltrades</p>
 			</section>
 		</footer>
 		<!-- End Contact -->

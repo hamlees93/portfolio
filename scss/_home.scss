@@ -1,8 +1,11 @@
+body {
+    background-image: linear-gradient(to top, #8B81B1 0%, #E1D9FF 100%);
+    background-attachment: fixed;
+}
+
 #home {
-    background: linear-gradient(to bottom right, #2E323A 41.8%, #fff 43%);
-    min-height: 90vh;
+    height: 100vh;
     width: 100%;
-    background-size: cover;
 
     img {
         width: 60vh;
@@ -11,8 +14,6 @@
 
     .tagline {
         text-align: center;
-        position: absolute;
-        bottom: 15%;
 
         .name-title {
             font-family: 'yellowtail';
@@ -23,16 +24,6 @@
             font-family: 'montserrsat'
         }
     }
-
-    
-
-    // img {
-    //     -webkit-transform: rotate(45deg);
-    //     -moz-transform: rotate(45deg);
-    //     -ms-transform: rotate(45deg);
-    //     -o-transform: rotate(45deg);
-    //     transform: rotate(45deg);
-    // }
 }
 
 
