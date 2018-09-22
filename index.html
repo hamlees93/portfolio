@@ -47,46 +47,24 @@
     <title>Hamish Lees</title>
   </head>
   <body data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
+
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-light navbar-relative" id="navbar-scroll">
-			<a class="navbar-brand" href="#">HECTIC LOGO</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+			<a class="navbar-brand" href="#">Hectic Logo</a>
 		
-			<section class="collapse navbar-collapse border border-primary" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about-me">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#previous-work">Previous Work</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-
-				<!-- Search -->
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
+			<section class="collapse navbar-collapse" id="navbarTogglerDemo03">
+				<section class="navbar-nav float-left text-left pr-3">
+					<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#about-me">About</a>
+					<a class="nav-item nav-link" href="#previous-work">Previous Work</a>
+					<a class="nav-item nav-link" href="#contact">Contact</a>
+				</section>
 			</section>
 		</nav>
-		<!-- End Navbar -->
-
-	
-
-
-
-
-
-
-	 
+		<!-- END NAVBAR -->
 
 		<!-- Landing page -->
 		<section id="home" class="container-fluid d-flex align-items-center">
@@ -105,73 +83,75 @@
 
 		<!--  About me -->
 		<!-- Good till 600px -->
-		<!-- SVGs are conecting, not neccesarrily to the middle -->
 		<section id="fake-container"></section>
 		<section id="about-me" class="container-fluid py-4">
 				
-			<section class="about-me-header item">
+			<section class="about-me-header p-2">
 				<h4>ABOUT ME</h4>
 			</section>
 			<section class="item d-flex justify-content-end">
 				<section id="square">
-					<p>Hi there. Thanks for visiting my website. My name is Hamish, and I'm an aspiring web developer from Sydney.</p> 
+					<p class="shape-text">Hi there. Thanks for visiting my website. My name is Hamish, and I'm an aspiring web developer from Sydney.</p> 
 				</section>		
 			</section>
 			<section class="item d-flex justify-content-start">
 				<section id="circle">
-					<p>A bit of my past....</p>
+					<p class="shape-text">Before taking the plunge into coding, I complete a bachelor of business, then spent 5 months as a scuba instructor.</p>
 				</section>
 			</section>
 			<section class="item d-flex justify-content-end">
 				<section id="triangle">
-					<p>My interests are....</p>
+					<p class="shape-text">My interets include: hiking, sports and the ocean</p>
 				</section>
 			</section>
 			<section class="item" id="blank"></section>
+			<span class="border">
 			<section class="skills">
 				<section class="skills-header skills-item p-3">
 					<h4>SKILLS</h4>
 				</section>
-				<section id="ruby" class="skills-item pt-3">
+				<section id="ruby" class="skills-item pt-3 ml-2">
 					<img src="images/ruby.png" alt="Icon of Ruby">
 				</section>
 				<section id="rails" class="skills-item">
 					<img src="images/rails.png" alt="Icon of Rails">
 				</section>
-				<section id="html" class="skills-item pb-3 mt-5">
+				<section id="html" class="skills-item pb-3 mt-5 ml-2">
 					<img src="images/htmlcss.png" alt="Icon of HTML and CSS">
 				</section>
 				<section id="bootstrap" class="skills-item pb-3 mt-5">
 					<img src="images/bootstrap.png" alt="Icon of Bootstrap">
 				</section>
 			</section>
+		</span>
 		</section>
-			<!-- End Interests -->
+		<!-- End Interests -->
 
 
 		<!-- Previous Work Section -->
 		<!-- PREVIOUS WORK AS CAROUSEL OF IMAGES WITH CAPTIONS -->
 		<section class="container-fluid no-gutters px-0" id="previous-work">
+			<h3 class="pt-4 preious-work-heading">Previous Work</h3>
 			<section class="carousel"
 			data-flickity='{ "wrapAround": true }'>
-			<section class="carousel-cell">
+				<section class="carousel-cell">
 					<a href="https://github.com/Ghalip701/Terminal-App" target="_blank"><img src="images/capital-city-quiz.jpg" alt="Screenshot from the app capital city quiz"></a> 
-					<h3>Capital City Quiz</h3>
+					<h4>Capital City Quiz</h4>
 					<p>A simple terminal app, written in Ruby, where users can track their high scores, as they attempt to name capital cities</p>
 				</section>
-			<section class="carousel-cell">
+				<section class="carousel-cell">
 					<a href="https://github.com/hamlees93/take_a_break" target="_blank"><img src="images/break.jpg" alt=""></a>
-					<h5>Take A Break</h5>
+					<h4>Take A Break</h4>
 					<p>An app written in Python to remind coders to take a break every 30 minutes</p>
 				</section>
-			<section class="carousel-cell">
+				<section class="carousel-cell">
 					<a href="https://github.com/hamlees93/banking_app" target="_blank"><img src="images/banking-app.jpg" alt="Screenshot from banking app"></a> 
-					<h5>Banking App</h5>
+					<h4>Banking App</h4>
 					<p>Written in Ruby, this app allows users to transact with a bank, and save their records</p>
 				</section>
-			<section class="carousel-cell">
+				<section class="carousel-cell">
 					<a href="https://github.com/hamlees93/creative_stages" target="_blank"><img src="images/creating-stages.jpg" alt=""></a> 
-					<h5>Creating Stages Website</h5>
+					<h4>Creating Stages Website</h4>
 					<p>A website, written in Flask, providing information and contact abilities for users</p>
 				</section>
 			</section>
@@ -184,27 +164,15 @@
 		<footer>
 			<section id="contact">
 				<h2 class="centre-heading">Want to know more?</h2>
-				<img src="images/mail.svg" alt="Mail Icon">
-				<img src="images/git.svg" alt="Github Icon">
-				<img src="images/linkedin.svg" alt="LINKEDIN Icon">
+				<a href="" target="_blank"><img src="images/mail.svg" alt="Mail Icon"></a>
+				<a href="https://github.com/hamlees93" target="_blank"><img src="images/git.svg" alt="Github Icon"></a>
+				<a href="https://au.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LINKEDIN Icon"></a>
 			</section>
 			<section class="copyright centre-heading">
 				<p>&copy; hamofalltrades</p>
 			</section>
 		</footer>
 		<!-- End Contact -->
-
-
-	
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Yellowtail");
-.navbar-relative {
-  position: fixed; }
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Yellowtail|Roboto");
+.navbar-left {
+  float: left;
+  margin-left: 15px; }
 
 body {
   background-image: linear-gradient(to top, #8B81B1 0%, #E1D9FF 100%);
   background-attachment: fixed; }
+
+h1, h3 {
+  font-family: 'yellowtail'; }
 
 #home {
   height: 100vh;
@@ -15,7 +19,6 @@ body {
   #home .tagline {
     text-align: center; }
     #home .tagline .name-title {
-      font-family: 'yellowtail';
       font-size: 4em; }
     #home .tagline .job-title {
       font-family: "montserrsat"; }
@@ -25,7 +28,6 @@ body {
   position: absolute; }
 
 #about-me {
-  background-size: cover;
   min-height: 100vh;
   text-align: center;
   display: flex;
@@ -35,27 +37,38 @@ body {
   #about-me #square {
     width: 200px;
     height: 200px;
-    background: #E00321; }
+    background: #E00321;
+    text-align: center; }
   #about-me #circle {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: #00ADFF; }
+    background: #00ADFF;
+    overflow: hidden;
+    text-align: justify;
+    -webkit-shape-inside: polygon(20% 20%, 0 300px, 300px 300px); }
   #about-me #triangle {
     width: 0;
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 200px solid #FFFF00; }
+    border-bottom: 200px solid #FFFF00;
+    text-align: center; }
+  #about-me .shape-text {
+    position: relative; }
   #about-me .about-me-header {
     background: #4D6CFA;
-    border-radius: 40px; }
+    border-radius: 40px;
+    width: 200px; }
+    #about-me .about-me-header h4 {
+      font-size: 2em; }
   #about-me .item {
     width: 300px;
-    padding-top: 50px; }
+    padding-top: 100px; }
   #about-me #blank {
     background: none; }
   #about-me .skills {
+    min-height: 80vh;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -83,10 +96,16 @@ body {
       max-height: 120px; }
 
 #previous-work {
-  min-height: 75vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 4fr 1fr; }
+  grid-template-rows: 1fr 4fr 1fr; }
+  #previous-work h3 {
+    text-align: center;
+    font-size: 3em; }
+  #previous-work h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; }
 
 .carousel {
   /* draggable */
@@ -102,10 +121,8 @@ body {
     padding-right: 20px;
     text-align: center; }
     .carousel .carousel-cell img {
-      width: 75%;
-      height: 75%; }
-    .carousel .carousel-cell h3 {
-      font-family: 'yellowtail'; }
+      width: 65%;
+      height: 65%; }
     .carousel .carousel-cell p {
       font-family: 'montserrsat'; }
   .carousel .flickity-enabled {

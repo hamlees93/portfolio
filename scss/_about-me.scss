@@ -3,9 +3,6 @@
     position: absolute;
 }
 #about-me {
-    // background-image: linear-gradient(to right, #8982B1 42%, #b49fda 79%);
-    // background: #F0D756;
-    background-size: cover;
     min-height: 100vh;
     text-align: center;
     display: flex;
@@ -13,38 +10,49 @@
     justify-content: space-around;
     overflow: hidden;
 
-    // red 
     #square {
         width: 200px;
         height: 200px;
         background: #E00321;
+        text-align: center;
     }
 
-    // blue 
     #circle {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         background: #00ADFF;
+        overflow: hidden;
+        text-align: justify;
+        -webkit-shape-inside: polygon(20% 20%, 0 300px, 300px 300px);
     }
 
-    // yellow 
     #triangle {
         width: 0;
         height: 0;
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;
         border-bottom: 200px solid #FFFF00;
+        text-align: center;
+    }
+
+    .shape-text {
+        position: relative;
     }
 
     .about-me-header {
         background: #4D6CFA;
         border-radius: 40px;
+        width: 200px;
+
+        h4 {
+            font-size: 2em;
+        }
     }
 
     .item {
         width: 300px;
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     // Empty space for balance
@@ -53,6 +61,7 @@
     }
 
     .skills {
+        min-height: 80vh;
         display: grid;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
