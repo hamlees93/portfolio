@@ -1,9 +1,18 @@
-$background-colour: none;
 #previous-work {
-    min-height: 75vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+
+    h3 {
+      text-align: center;
+      font-size: 3em;
+    }
+
+    h4 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+    }
 }
 
 .carousel {
@@ -16,12 +25,8 @@ $background-colour: none;
     text-align: center;
 
     img {
-      width: 75%;
-      height: 75%;
-    }
-
-    h3 {
-      font-family: 'yellowtail';
+      width: 65%;
+      height: 65%;
     }
 
     p {
