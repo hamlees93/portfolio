@@ -29,9 +29,12 @@ h1, h3 {
   #home .home-screen {
     width: 100%; }
   @media (max-width: 991.98px) {
-    #home img {
+    #home .middle {
       min-width: 70%;
       height: auto; } }
+  @media (max-width: 991.98px) {
+    #home .up, #home .right, #home .left {
+      display: none; } }
   #home .tagline {
     text-align: center; }
     #home .tagline .name-title {
@@ -68,9 +71,20 @@ h1, h3 {
     color: azure; }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  img {
-    width: 500px;
-    height: auto; } }
+  #home {
+    display: relative; }
+
+  .landing-image {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    opacity: 1;
+    display: block; }
+    .landing-image.active {
+      opacity: 1; } }
 #fake-container {
   z-index: -10;
   position: absolute; }
@@ -165,6 +179,11 @@ h1, h3 {
         #about-me .skills .skills-item img {
           max-width: 240px;
           max-height: 240px; } }
+  @media (min-width: 1199.98px) {
+    #about-me {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto; } }
 
 #previous-work {
   height: 100vh;
