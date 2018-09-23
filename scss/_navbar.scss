@@ -2,3 +2,21 @@
     float: left;
     margin-left: 15px;
 }
+
+.logo {
+    opacity: 0.5;
+
+    img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+.navbar a:hover {
+    opacity: 1;
+}
+
+.navbar .navbar-nav a:hover {
+    opacity: 1;
+    color: white;
+}

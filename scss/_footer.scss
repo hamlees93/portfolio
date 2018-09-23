@@ -1,19 +1,34 @@
 footer {
-    .centre-heading {
-        text-align: center;
-    }
+    #contact {
 
-    h2 {
-        font-family: 'yellowtail';
-    }
+        .centre-heading {
+            text-align: center;
 
-    img {
-        width: 30%;
-        height: auto;
-    }
+            a {
+                padding-right: 5px;
+            }
+        }
 
-    .copyright {
-        font-family: 'montserrsat';
+        h2 {
+            font-family: 'yellowtail';
+
+            @media (min-width: 767px) {
+                font-size: 3em;
+              }
+        }
+
+        img {
+            width: 50px;
+            height: auto;
+
+            @media (min-width: 767px) {
+                width: 75px;
+            }
+        }
+
+        .copyright {
+            font-family: 'montserrsat';
+        }
     }
 }
 

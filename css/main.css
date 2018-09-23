@@ -3,9 +3,23 @@
   float: left;
   margin-left: 15px; }
 
+.logo {
+  opacity: 0.5; }
+  .logo img {
+    max-width: 50px;
+    max-height: 50px; }
+
+.navbar a:hover {
+  opacity: 1; }
+
+.navbar .navbar-nav a:hover {
+  opacity: 1;
+  color: white; }
+
 body {
   background-image: linear-gradient(to top, #8B81B1 0%, #E1D9FF 100%);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  overflow-x: hidden; }
 
 h1, h3 {
   font-family: 'yellowtail'; }
@@ -13,8 +27,11 @@ h1, h3 {
 #home {
   height: 100vh;
   width: 100%; }
+  #home .home-screen {
+    width: 100%; }
   #home img {
-    width: 60vh;
+    min-width: 75%;
+    height: auto;
     margin: auto; }
   #home .tagline {
     text-align: center; }
@@ -23,50 +40,74 @@ h1, h3 {
     #home .tagline .job-title {
       font-family: "montserrsat"; }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #home {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto); } }
 #fake-container {
   z-index: -10;
   position: absolute; }
 
 #about-me {
   min-height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 75px;
+  text-align: center; }
+  @media (max-width: 767.9px) {
+    #about-me .svg-shape {
+      width: 100%;
+      height: 250px; } }
+  #about-me .svg-size {
+    height: 225px; }
+  #about-me text {
+    fill: black;
+    font-size: 20px;
+    font-family: 'montserrsat'; }
+  #about-me #diamond {
+    y: 25%;
+    width: 45%;
+    height: 130px;
+    fill: #4D6CFA;
+    transform: rotate(45deg);
+    transform-origin: bottom; }
+  #about-me #diamond-text {
+    font-size: 30px; }
   #about-me #square {
-    width: 200px;
-    height: 200px;
-    background: #E00321;
-    text-align: center; }
+    width: 70%;
+    height: 180px;
+    x: 15%;
+    fill: #E00321; }
   #about-me #circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #00ADFF;
-    overflow: hidden;
-    text-align: justify;
-    -webkit-shape-inside: polygon(20% 20%, 0 300px, 300px 300px); }
+    cx: 50%;
+    cy: 50%;
+    r: 40%;
+    fill: #00ADFF; }
   #about-me #triangle {
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 200px solid #FFFF00;
-    text-align: center; }
-  #about-me .shape-text {
-    position: relative; }
-  #about-me .about-me-header {
-    background: #4D6CFA;
-    border-radius: 40px;
-    width: 200px; }
-    #about-me .about-me-header h4 {
-      font-size: 2em; }
-  #about-me .item {
-    width: 300px;
-    padding-top: 100px; }
-  #about-me #blank {
-    background: none; }
+    fill: #FFFF00; }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    #about-me .shapes {
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-template-rows: repeat(3, auto); }
+      #about-me .shapes #centre-grid {
+        grid-column: 2/span 1;
+        grid-row: 2/span 1; }
+      #about-me .shapes #top-left-grid {
+        grid-column: 1/span 1;
+        grid-row: 1/span 1; }
+      #about-me .shapes #top-right-grid {
+        grid-column: 3/span 1;
+        grid-row: 1/span 1; }
+      #about-me .shapes #bottom-right-grid {
+        grid-column: 3/span 1;
+        grid-row: 3/span 1; }
+      #about-me .shapes #centre-target, #about-me .shapes #top-right-target, #about-me .shapes #bottom-right-target, #about-me .shapes #top-left-target {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 0px;
+        height: 0px; } }
   #about-me .skills {
     min-height: 80vh;
     display: grid;
@@ -94,6 +135,10 @@ h1, h3 {
     #about-me .skills .skills-item img {
       max-width: 120px;
       max-height: 120px; }
+      @media (min-width: 767px) and (max-width: 991.98px) {
+        #about-me .skills .skills-item img {
+          max-width: 240px;
+          max-height: 240px; } }
 
 #previous-work {
   height: 100vh;
@@ -103,9 +148,15 @@ h1, h3 {
   #previous-work h3 {
     text-align: center;
     font-size: 3em; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      #previous-work h3 {
+        font-size: 4em; } }
   #previous-work h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold; }
+    @media (min-width: 767px) and (max-width: 991.98px) {
+      #previous-work h4 {
+        font-size: 3em; } }
 
 .carousel {
   /* draggable */
@@ -124,7 +175,13 @@ h1, h3 {
       width: 65%;
       height: 65%; }
     .carousel .carousel-cell p {
-      font-family: 'montserrsat'; }
+      font-family: 'montserrsat';
+      width: 80%;
+      text-align: center;
+      padding-left: 25%; }
+      @media (min-width: 767px) {
+        .carousel .carousel-cell p {
+          font-size: 1.5em; } }
   .carousel .flickity-enabled {
     position: relative; }
   .carousel .flickity-enabled:focus {
@@ -217,14 +274,22 @@ h1, h3 {
   .carousel .flickity-page-dots .dot.is-selected {
     opacity: 1; }
 
-footer .centre-heading {
+footer #contact .centre-heading {
   text-align: center; }
-footer h2 {
+  footer #contact .centre-heading a {
+    padding-right: 5px; }
+footer #contact h2 {
   font-family: 'yellowtail'; }
-footer img {
-  width: 30%;
+  @media (min-width: 767px) {
+    footer #contact h2 {
+      font-size: 3em; } }
+footer #contact img {
+  width: 50px;
   height: auto; }
-footer .copyright {
+  @media (min-width: 767px) {
+    footer #contact img {
+      width: 75px; } }
+footer #contact .copyright {
   font-family: 'montserrsat'; }
 
 /*# sourceMappingURL=main.css.map */
