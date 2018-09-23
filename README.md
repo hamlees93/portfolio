@@ -38,16 +38,16 @@ The website is a single page scrolling site that is set out in the following ord
 ## Screenshots
 
 
-![Landing page](https://github.com/hamlees93/portfolio/blob/master/src/docs/landing-page.png)
+![Landing page](https://github.com/hamlees93/portfolio/blob/master/docs/landing-page.png)
 
 
-![About Me](https://github.com/hamlees93/portfolio/blob/master/src/docs/about-me.png)
+![About Me](https://github.com/hamlees93/portfolio/blob/master/docs/about-me.png)
 
 
-![Previous Work](https://github.com/hamlees93/portfolio/blob/master/src/docs/previous-work.png)
+![Previous Work](https://github.com/hamlees93/portfolio/blob/master/docs/previous-work.png)
 
 
-![Contact](https://github.com/hamlees93/portfolio/blob/master/src/docs/contact.png)
+![Contact](https://github.com/hamlees93/portfolio/blob/master/docs/contact.png)
 
 
 ## Target Audience
@@ -80,19 +80,19 @@ The Following techs were used:
 ## Wireframes
 
 
-![Phone Design](https://github.com/hamlees93/portfolio/blob/master/src/docs/phone1.png)
+![Phone Design](https://github.com/hamlees93/portfolio/blob/master/docs/phone1.png)
 
 
-![Phone Design](https://github.com/hamlees93/portfolio/blob/master/src/docs/phone2.png)
+![Phone Design](https://github.com/hamlees93/portfolio/blob/master/docs/phone2.png)
 
 
-![Laptop Design](https://github.com/hamlees93/portfolio/blob/master/src/docs/laptop1.png)
+![Laptop Design](https://github.com/hamlees93/portfolio/blob/master/docs/laptop1.png)
 
 
-![Laptop Design](https://github.com/hamlees93/portfolio/blob/master/src/docs/laptop2.png)
+![Laptop Design](https://github.com/hamlees93/portfolio/blob/master/docs/laptop2.png)
 
 
-![List of Designs](https://github.com/hamlees93/portfolio/blob/master/src/docs/list-of-balsamiq.png)
+![List of Designs](https://github.com/hamlees93/portfolio/blob/master/docs/list-of-balsamiq.png)
 
 
 ## Personal Logo
@@ -154,7 +154,7 @@ My planned timings were off, as I had a change of design plans halfway through t
 
 ##### Trello board from beginning of day 2:
 
-![Trello Board](https://github.com/hamlees93/portfolio/blob/master/src/docs/trello.png)
+![Trello Board](https://github.com/hamlees93/portfolio/blob/master/docs/trello.png)
 
 
 ## Short Answers
