@@ -44,6 +44,36 @@
 			</script>
 		<!-- END connecting-arrows -->
 
+			<!-- Image change on home page -->
+			<script>
+					$("#home").mousemove(getMousePosition);
+					function getMousePosition(event) {
+						let elementVisible = $('.landing-image:visible');
+						  let imageTop = elementVisible.offset().top;
+						let imageLeft = elementVisible.offset().left;
+						let imageBottom = imageTop + elementVisible.height();
+						let imageRight = imageLeft + elementVisible.width();
+						var mouseX = event.pageX;
+						  var mouseY = event.pageY;
+						if (mouseY < imageTop || mouseY > imageBottom) {
+							return;
+						}
+						console.log(mouseY);
+						elementVisible.hide();
+						if (mouseX > imageLeft && mouseX < imageRight){
+							$('.landing-image.middle').show();
+						}
+						else if (mouseX < imageLeft) {
+							$('.landing-image.left').show();
+						}
+						else {
+							$('.landing-image.right').show();
+						}
+					}
+					$('.landing-image').css('z-index', '0');
+				</script>
+				<!-- End image change -->
+
 		
 		
     <title>Hamish Lees</title>
@@ -83,7 +113,10 @@
 		<section id="home" class="container-fluid d-flex align-items-center">
 			<section class="home-screen">
 				<section class="container text-center middle-picture">
-					<img class="rounded mx-auto" src="images/forward.jpg" alt="Picture of aspiring-developer, Hamish Lees, in a turtle neck">
+					<img class="rounded mx-auto landing-image middle" src="images/forward.jpg" alt="Picture of aspiring-developer, Hamish Lees, in a turtle neck">
+					<img class="rounded mx-auto landing-image up" src="images/up.jpg" alt="">
+					<img class="rounded mx-auto landing-image right" src="images/right.jpg" alt="">
+					<img class="rounded mx-auto landing-image left" src="images/left.jpg" alt="">
 				</section>
 				<section class="container tagline justify-content-center">
 					<h1 class="name-title">Hamish Lees</h1>
@@ -223,7 +256,8 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<!-- <script>"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"</script> -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
 		<script  src="js/index.js"></script>
@@ -234,7 +268,7 @@
 			ScrollReveal().reveal('.svg-shape', { delay: 500, interval: 500 });
 			ScrollReveal().reveal('.skills-item', { distance: '85%',delay: 800 });
 		</script> 
-
+		<!-- End animation -->
 
 		<!-- SCRIPT OPTIONS 
 			 

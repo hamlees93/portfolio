@@ -143,4 +143,10 @@
             }
         }
     }
+
+    @media (min-width: 1199.98px) {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
 }
