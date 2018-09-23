@@ -58,7 +58,7 @@ h1, h3 {
   .floating-links #float-contact {
     position: absolute;
     right: 5%;
-    top: 500px; }
+    top: 50vh; }
   .floating-links p {
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
@@ -125,7 +125,7 @@ h1, h3 {
     fill: #00ADFF; }
   #about-me #triangle {
     fill: #FFFF00; }
-  @media (min-width: 768px) and (max-width: 1199.98px) {
+  @media (min-width: 768px) {
     #about-me .shapes {
       display: grid;
       grid-template-columns: repeat(3, 32%);
@@ -179,7 +179,7 @@ h1, h3 {
         #about-me .skills .skills-item img {
           max-width: 240px;
           max-height: 240px; } }
-  @media (min-width: 1199.98px) {
+  @media (min-width: 1200px) {
     #about-me {
       display: grid;
       grid-template-columns: auto auto;
@@ -216,6 +216,11 @@ h1, h3 {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center; }
+    @media (min-width: 1200px) {
+      .carousel .carousel-cell {
+        width: 65%;
+        padding-right: 75px;
+        padding-left: 40px; } }
     .carousel .carousel-cell img {
       width: 65%;
       height: 65%; }
