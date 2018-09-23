@@ -18,8 +18,7 @@
 
 body {
   background-image: linear-gradient(to top, #8B81B1 0%, #E1D9FF 100%);
-  background-attachment: fixed;
-  overflow-x: hidden; }
+  background-attachment: fixed; }
 
 h1, h3 {
   font-family: 'yellowtail'; }
@@ -29,10 +28,10 @@ h1, h3 {
   width: 100%; }
   #home .home-screen {
     width: 100%; }
-  #home img {
-    min-width: 75%;
-    height: auto;
-    margin: auto; }
+  @media (max-width: 991.98px) {
+    #home img {
+      min-width: 70%;
+      height: auto; } }
   #home .tagline {
     text-align: center; }
     #home .tagline .name-title {
@@ -40,11 +39,38 @@ h1, h3 {
     #home .tagline .job-title {
       font-family: "montserrsat"; }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #home {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto); } }
+.floating-links {
+  display: none; }
+  @media (min-width: 992px) {
+    .floating-links {
+      display: inline-block; } }
+  .floating-links #float-about {
+    position: absolute;
+    left: 47%;
+    top: 10vh; }
+  .floating-links #float-previous {
+    position: absolute;
+    left: 5%;
+    top: 50vh; }
+  .floating-links #float-contact {
+    position: absolute;
+    right: 5%;
+    top: 500px; }
+  .floating-links p {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    border: #000;
+    border-style: solid; }
+  .floating-links a {
+    text-decoration: none;
+    color: #000; }
+  .floating-links a:hover {
+    color: azure; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  img {
+    width: 500px;
+    height: auto; } }
 #fake-container {
   z-index: -10;
   position: absolute; }
@@ -154,7 +180,7 @@ h1, h3 {
   #previous-work h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold; }
-    @media (min-width: 767px) and (max-width: 991.98px) {
+    @media (min-width: 767px) and (max-width: 1199.98px) {
       #previous-work h4 {
         font-size: 3em; } }
 
