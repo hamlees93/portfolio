@@ -98,7 +98,7 @@ The Following techs were used:
 ## Personal Logo
 
 
-![Personal Logo](https://github.com/hamlees93/portfolio/blob/master/src/images/logo.png)
+![Personal Logo](https://github.com/hamlees93/portfolio/blob/master/src/images/logo.jpg)
 
 
 ## Usability Considerations
