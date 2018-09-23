@@ -1,7 +1,7 @@
 # Hamish Lees - Portfolio
 
 
-[Portfolio](https://hamlees93.github.io/portfolio/ )
+[Portfolio](https://hamlees93.github.io/portfolio/src )
 
 [Github Repo for Portfolio](https://github.com/hamlees93/portfolio)
 
