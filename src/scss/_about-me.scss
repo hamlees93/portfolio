@@ -146,7 +146,7 @@
 
     @media (min-width: 1200px) {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
 }
