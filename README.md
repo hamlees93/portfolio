@@ -154,3 +154,41 @@ My planned timings were off, as I had a change of design plans halfway through t
 ##### Trello board from beginning of day 2:
 
 ![Trello Board](https://github.com/hamlees93/portfolio/blob/master/src/docs/trello.png)
+
+
+## Short Answers
+
+
+### 1.
+
+* 1982 - Tim Berners-Lee creates a system to share documents
+* 1983 - Domain name system is proposed
+* 1988 - One of the first Internet worms, Morris, cripples thousands of computers
+* 1990 - Tim Berners-Lee creates the World Wide Web while developing ways to control computers remotely at CERN, the European Organization for Nuclear Research
+* 1993 - Mosaic, the first web browser, is created
+* 1995 - Amazon.com opens its virtual doors
+* 1998 - Google is formed
+* 1999 - World internet population surpasse 250 million
+* 2000 - Dot-com bust puts big companies in free-fall
+* 2004 - Facebook is created
+* 2005 - Youtube is created
+* 2006 - World internet population surpasses 1 billion
+* 2007 - iPhone is released, giving millions of users easy access to the internet
+* 2011 - Silk Road - an online black market - is launched, causing great concern about the internet and internet anonymity
+* 2015 - Internet usage on phones surpasses that of computers
+
+
+### 2. 
+
+Domains are effectively an address that internet pages are accessed through. Web server refers to server software, or hardware dedicated to running said software, that can serve contents to the World Wide Web. DNS, or domain name system, gives domains a human readable name, as oppose to the numbers and ports used to access them. Web browsers are used by people to gain access to internet pages.
+
+All those objects are used in conjunction for users to access information with ease. A user will logon to a web browsers, and type in a domain name. The web browser will take that domain name, and direct the user to the correct domain, all behind the scenes. This domain allows the user to access, or interact with, the content uploaded by others onto web servers.
+
+
+### 3. 
+
+Facebook, one of the biggest companies in the world, is a prime example of the impact the internet has on our day-to-day life. Facebook has effectively created a new past time for people. Millions of people access their website on a daily, and often more frequently, basis. After creating a huge user base, facebook was able to start generating revenue from advertising and data collection on their users. 
+
+From a small project, started in a dorm room, facebook has become one of the worlds super powers - although with plenty of controversy. From unethical psychological, to youth depression, to data mining, facebook has pretty much seen it all. Somehow though, people still put it at the centre of their lives and it continues to dominate
+
+
