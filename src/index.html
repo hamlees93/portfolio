@@ -40,8 +40,45 @@
 			</script>
 		<!-- END connecting-arrows -->
 
+
+		<script>
+		$(document).ready(function() {
+			$('.floating-links float-about a#1').hover(
+				function(){
+					$(this).addClass('hover');
+					$('.home-screen .middle-picture img').attr('src', 'images/up.jpg');
+				},
+				function(){
+					$(this).removeClass('hover');
+					$('.home-screen .middle-picture img').attr('src', 'images/forward.jpg');
+				}
+			);
+			$('.floating-links float-about a#2').hover(
+				function(){
+					$(this).addClass('hover');
+					$('.home-screen .middle-picture img').attr('src', 'images/up.jpg');
+				},
+				function(){
+					$(this).removeClass('hover');
+					$('.home-screen .middle-picture img').attr('src', 'forward.jpg');
+				}
+			);
+			$('.floating-links float-about a#3').hover(
+				function(){
+					$(this).addClass('hover');
+					$('.home-screen .middle-picture img').attr('src', 'images/right.jpg');
+				},
+				function(){
+					$(this).removeClass('hover');
+					$('.home-screen .middle-picture img').attr('src', 'images/forward.jpg');
+				}
+			);
+			});
+		</script>
+
+
 			<!-- Image change on home page -->
-			<script>
+			<!-- <script>
 					$("#home").mousemove(getMousePosition);
 					function getMousePosition(event) {
 						let elementVisible = $('.landing-image:visible');
@@ -67,7 +104,7 @@
 						}
 					}
 					$('.landing-image').css('z-index', '0');
-				</script>
+				</script> -->
 				<!-- End image change -->
 
 		
@@ -97,13 +134,13 @@
 		<!-- Landing page -->
 		<section class="floating-links">
 			<section id="float-about">
-				<a href="#about-me"><p>About</p></a>
+				<a id='1' href="#about-me"><p>About</p></a>
 			</section>
 			<section id="float-previous">
-				<a href="#previous-work"><p>Projects</p></a>
+				<a id='2' href="#previous-work"><p>Projects</p></a>
 			</section>
 			<section id="float-contact">
-				<a href="#contact"><p>Contact</p></a>
+				<a id='3' href="#contact"><p>Contact</p></a>
 			</section>
 		</section>
 		<section id="home" class="container-fluid d-flex align-items-center">
