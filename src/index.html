@@ -38,77 +38,7 @@
 			});
 			}
 			</script>
-		<!-- END connecting-arrows -->
-
-
-		<script>
-		$(document).ready(function() {
-			$('.floating-links float-about a#1').hover(
-				function(){
-					$(this).addClass('hover');
-					$('.home-screen .middle-picture img').attr('src', 'images/up.jpg');
-				},
-				function(){
-					$(this).removeClass('hover');
-					$('.home-screen .middle-picture img').attr('src', 'images/forward.jpg');
-				}
-			);
-			$('.floating-links float-about a#2').hover(
-				function(){
-					$(this).addClass('hover');
-					$('.home-screen .middle-picture img').attr('src', 'images/up.jpg');
-				},
-				function(){
-					$(this).removeClass('hover');
-					$('.home-screen .middle-picture img').attr('src', 'forward.jpg');
-				}
-			);
-			$('.floating-links float-about a#3').hover(
-				function(){
-					$(this).addClass('hover');
-					$('.home-screen .middle-picture img').attr('src', 'images/right.jpg');
-				},
-				function(){
-					$(this).removeClass('hover');
-					$('.home-screen .middle-picture img').attr('src', 'images/forward.jpg');
-				}
-			);
-			});
-		</script>
-
-
-			<!-- Image change on home page -->
-			<!-- <script>
-					$("#home").mousemove(getMousePosition);
-					function getMousePosition(event) {
-						let elementVisible = $('.landing-image:visible');
-						  let imageTop = elementVisible.offset().top;
-						let imageLeft = elementVisible.offset().left;
-						let imageBottom = imageTop + elementVisible.height();
-						let imageRight = imageLeft + elementVisible.width();
-						var mouseX = event.pageX;
-						  var mouseY = event.pageY;
-						if (mouseY < imageTop || mouseY > imageBottom) {
-							return;
-						}
-						console.log(mouseY);
-						elementVisible.hide();
-						if (mouseX > imageLeft && mouseX < imageRight){
-							$('.landing-image.middle').show();
-						}
-						else if (mouseX < imageLeft) {
-							$('.landing-image.left').show();
-						}
-						else {
-							$('.landing-image.right').show();
-						}
-					}
-					$('.landing-image').css('z-index', '0');
-				</script> -->
-				<!-- End image change -->
-
-		
-		
+		<!-- END connecting-arrows -->		
     <title>Hamish Lees</title>
   </head>
   <body data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
@@ -130,6 +60,7 @@
 			</section>
 		</nav>
 		<!-- END NAVBAR -->
+
 
 		<!-- Landing page -->
 		<section class="floating-links">
@@ -290,16 +221,46 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<!-- <script>"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"</script> -->
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
-		<script  src="js/index.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+	<script  src="js/index.js"></script>
 
-		<!-- Animation script with description attached -->
-		<script>
-			// ScrollReveal().reveal('.svg-shape', { distance: '50%',delay: 500 });
-			ScrollReveal().reveal('.svg-shape', { delay: 500, interval: 500 });
-			ScrollReveal().reveal('.skills-item', { distance: '85%',delay: 800 });
-		</script> 
-		<!-- End animation -->
+	<!-- Animation script with description attached -->
+	<script>
+		ScrollReveal().reveal('.svg-shape', { delay: 500, interval: 500 });
+		ScrollReveal().reveal('.skills-item', { distance: '85%',delay: 800 });
+	</script> 
+	<!-- End animation -->
+
+
+	<!-- Script for changing of homepage image -->
+	<script>
+		$(function() {
+  			$('#float-about').hover(function() {
+   				$('#home .middle-picture img').attr('src', 'images/up.jpg');
+			}, 
+			function() {
+   			// on mouseout, reset the background colour
+    			$('#home .middle-picture img').attr('src', 'images/forward.jpg');
+			});
+		});
+		$(function() {
+			$('#float-previous').hover(function() {
+				$('#home .middle-picture img').attr('src', 'images/left.jpg');
+			}, 
+			function() {
+    			$('#home .middle-picture img').attr('src', 'images/forward.jpg');
+			});
+		});
+		$(function() {
+  			$('#float-contact').hover(function() {
+   				$('#home .middle-picture img').attr('src', 'images/right.jpg');
+		  	}, 
+			function() {
+    			$('#home .middle-picture img').attr('src', 'images/forward.jpg');
+		  	});
+		});
+	</script>
+	<!-- End changing of image -->
   </body>
 </html>
